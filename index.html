@@ -20,11 +20,57 @@
         <![endif]-->
         <!-- Add your site or application content here -->
         <div class="content">
+		<div class="form">
+		<form id="form-container" class="form-container">
+			<label for="date">Date </label><input type="date" id="date" value="">
+			<button id="submit-btn">Submit</button>
+		</form>
+		</div>
+		<div class="nasa-container">  
+		<h3 id="nasa-header">Close NEOs</h3>
+		<ul id="nasa_results" class="result-list">See near-earth objects on their closest approach with a given date</ul>
+		</div>
 		</div>
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+		<script>
+		console.log("loaded script");
+		var $nasa_elem = $('#nasa-results');
+		console.log("loading data...");
+		var $date = $("#date").val();
+		console.log($date);
+
+		var nasa_api_url = "https://api.nasa.gov/neo/rest/v1/feed";
+		nasa_api_url += $.param({
+				  'start_date' : $date,
+				  'end_date' : $date,
+				  'api_key' : 'DEMO_KEY',
+			});
+
+		console.log(nasa_api_url);
+		$.ajax({
+				  url: nasa_api_url,
+				  method: 'GET',
+				}).done(function(result) {
+				  var neo_objects = result;
+				  console.log(neo_objects);
+				  var $number_of_articles = $neo_objects.response.docs.length;
+				  var $articles = ""
+				  for (var i = 0; i < $number_of_articles; i++) {
+					   $article_list_item = "<li class='article'>" + ($nyt_articles.response.docs[i].headline.main) + "</li>";
+					   $articles += $article_list_item;
+					   }
+				  $("#nasa-results").html($articles);
+				}).fail(function(err) {
+				  var $error_msg = "<span>Nasa Data could not be loaded</span>";
+				  $("#nasa-results").html($error_msg);
+				  throw err;
+			});
+
+		console.log("finished script");
+		</script>
     </body>
 </html>
