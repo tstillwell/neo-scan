@@ -53,10 +53,10 @@
 		  url: nasa_api_url,
 		  method: 'GET',
 		}).done(function(result) {
-		  var neo_objects = result;
-		  console.log(neo_objects);
-		  var $number_of_neos = neo_objects.element_count;
-		  var $results = ""
+		  var neo_results = result;
+		  console.log(neo_results);
+		  var $number_of_neos = neo_results.element_count;
+		  var $results = "";
 		  for (var i = 0; i < $number_of_neos; i++) {
 			   console.log(neo_objects.near_earth_objects.$date.i);
 			   $result_list_item = "<li class='object'>" + (neo_objects.near_earth_objects.$date.i) + "</li>";
