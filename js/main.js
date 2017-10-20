@@ -27,7 +27,7 @@ function loadData() {
 			   $result_list_item = "<li class='object'>" + ($neo_objects.response.near_earth_objects.$date[i]) + "</li>";
 			   $results += $result_list_item;
 			   }
-		  $("#nasa-results").html($articles);
+		  $("#nasa-results").html($results);
 		}).fail(function(err) {
 		  var $error_msg = "<span>Nasa Data could not be loaded</span>";
 		  $("#nasa-results").html($error_msg);
