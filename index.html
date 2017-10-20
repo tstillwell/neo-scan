@@ -35,7 +35,7 @@
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <!--<script src="js/main.js"></script>-->
 		<script>
 		console.log("loaded script");
 		var $nasa_elem = $('#nasa-results');
@@ -52,24 +52,23 @@
 
 		console.log(nasa_api_url);
 		$.ajax({
-				  url: nasa_api_url,
-				  method: 'GET',
-				}).done(function(result) {
-				  var neo_objects = result;
-				  console.log(neo_objects);
-				  var $number_of_articles = $neo_objects.response.docs.length;
-				  var $articles = ""
-				  for (var i = 0; i < $number_of_articles; i++) {
-					   $article_list_item = "<li class='article'>" + ($nyt_articles.response.docs[i].headline.main) + "</li>";
-					   $articles += $article_list_item;
-					   }
-				  $("#nasa-results").html($articles);
-				}).fail(function(err) {
-				  var $error_msg = "<span>Nasa Data could not be loaded</span>";
-				  $("#nasa-results").html($error_msg);
-				  throw err;
-			});
-
+		  url: nasa_api_url,
+		  method: 'GET',
+		}).done(function(result) {
+		  var neo_objects = result;
+		  console.log(neo_objects);
+		  var $number_of_neos = $neo_objects.response.element_count;
+		  var $results = ""
+		  for (var i = 0; i < $number_of_neos; i++) {
+			   $result_list_item = "<li class='object'>" + ($neo_objects.response.near_earth_objects.$date[i]) + "</li>";
+			   $results += $result_list_item;
+			   }
+		  $("#nasa-results").html($articles);
+		}).fail(function(err) {
+		  var $error_msg = "<span>Nasa Data could not be loaded</span>";
+		  $("#nasa-results").html($error_msg);
+		  throw err;
+		});
 		console.log("finished script");
 		</script>
     </body>

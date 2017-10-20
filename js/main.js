@@ -2,7 +2,6 @@ console.log("loaded script");
 
 function loadData() {
 	var $body = $('body');
-	var $nytElem = $('#nasa-results');
 	console.log($body);
 	console.log("loading data...");
 	var $date = $("#date").val();
