@@ -1,7 +1,7 @@
 console.log("loaded script");
 
 function loadData() {
-var $nasa_elem = $('#nasa-results');
+		var $nasa_elem = $('#nasa-results');
 		console.log("loading data...");
 		var $date = $("#date").val();
 		console.log($date);
@@ -25,7 +25,7 @@ var $nasa_elem = $('#nasa-results');
 			   $result_list_item = "<li class='object'>" + (neo_results.near_earth_objects.$date.i) + "</li>";
 			   $results += $result_list_item;
 			   }
-		  $("#nasa-results").html($articles);
+		  $("#nasa-results").html($results);
 		}).fail(function(err) {
 		  var $error_msg = "<span>Nasa Data could not be loaded</span>";
 		  $("#nasa-results").html($error_msg);

@@ -23,7 +23,7 @@
 		<div class="form">
 		<form id="form-container" class="form-container" onsubmit="return false">
 			<label for="date">Date </label><input type="date" id="date" value="">
-			<button id="submit-btn">Submit</button>
+			<button id="submit-btn" onclick="loadData()">Submit</button>
 		</form>
 		</div>
 		<div class="nasa-container">  
@@ -37,6 +37,7 @@
         <script src="js/plugins.js"></script>
         <!--<script src="js/main.js"></script>-->
 		<script>
+		function loadData() {
 		console.log("loaded script");
 		var $nasa_elem = $('#nasa-results');
 		console.log("loading data...");
@@ -62,13 +63,14 @@
 			   $result_list_item = "<li class='object'>" + (neo_results.near_earth_objects.$date.i) + "</li>";
 			   $results += $result_list_item;
 			   }
-		  $("#nasa-results").html($articles);
+		  $("#nasa-results").html($results);
 		}).fail(function(err) {
 		  var $error_msg = "<span>Nasa Data could not be loaded</span>";
 		  $("#nasa-results").html($error_msg);
 		  throw err;
 		});
 		console.log("finished script");
+		}
 		</script>
     </body>
 </html>
