@@ -33,6 +33,4 @@ function loadData() {
 		});
 }
 
-$('#form-container').submit(loadData);
-
 console.log("finished script");
