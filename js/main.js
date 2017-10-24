@@ -2,9 +2,7 @@ console.log("loaded script");
 
 function loadData() {
 		var $nasa_elem = $('#nasa-results');
-		console.log("loading data...");
 		var $date = $("#date").val();
-		console.log($date);
 		var nasa_api_url = "https://api.nasa.gov/neo/rest/v1/feed?";
 		nasa_api_url += $.param({
 				  'start_date' : $date,
@@ -17,16 +15,13 @@ function loadData() {
 		  method: 'GET',
 		}).done(function(result) {
 		  var neo_results = result;
-		  console.log(neo_results);
 		  var $number_of_neos = neo_results.element_count;
-		  console.log($number_of_neos);
 		  var $results = "";
 		  for (var i = 0; i < $number_of_neos; i++) {
 			   console.log(neo_results.near_earth_objects[$date][i].name);
 			   $result_list_item = "<li class='object'>" + (neo_results.near_earth_objects[$date][i].name) + "</li>";
 			   $results += $result_list_item;
 			   }
-		  console.log($results);
 		  var list = document.getElementById("nasa_results");
 		  $("#nasa_results").html($results);
 		}).fail(function(err) {
