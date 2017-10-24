@@ -20,7 +20,8 @@ function loadData() {
 		  for (var i = 0; i < $number_of_neos; i++) {
 			   console.log(neo_results.near_earth_objects[$date][i].name);
 			   $result_list_item = "<li class='object'>";
-			   $result_list_item += (neo_results.near_earth_objects[$date][i].name) + "</li>";
+			   $result_list_item += (neo_results.near_earth_objects[$date][i].name);
+			   $result_list_item += "</li>";
 			   $results += $result_list_item;
 			   }
 		  var list = document.getElementById("nasa_results");
