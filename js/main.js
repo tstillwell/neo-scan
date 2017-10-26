@@ -1,5 +1,3 @@
-console.log("loaded script");
-
 function loadData() {
 		var $nasa_elem = $('#nasa-results');
 		var $date = $("#date").val();
@@ -30,5 +28,3 @@ function loadData() {
 		  throw err;
 		});
 }
-
-console.log("finished script");
