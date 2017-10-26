@@ -23,7 +23,6 @@ function loadData() {
 			   $result_list_item += "</li>";
 			   $results += $result_list_item;
 			   }
-		  var list = document.getElementById("nasa_results");
 		  $("#nasa_results").html($results);
 		}).fail(function(err) {
 		  var $error_msg = "<span>Nasa Data could not be loaded</span>";
