@@ -19,6 +19,7 @@ function loadData() {
 			   $neo = neo_results.near_earth_objects[$date][i]
 			   $result_list_item = "<tr class='neo-item'><td>";
 			   $result_list_item += $neo.name + "</td>";
+			   $result_list_item += "<td>" + $neo.estimated_diameter.meters.estimated_diameter_min + " meters </td>";
 			   $result_list_item += "<td>" + $neo.estimated_diameter.meters.estimated_diameter_max + " meters </td>";
 			   $result_list_item += "</tr>";
 			   $results += $result_list_item;
