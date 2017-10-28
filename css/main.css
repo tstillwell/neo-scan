@@ -97,17 +97,14 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+table {
+	border-collapse: collapse;
+	border: 1px solid black;
+	}
 
-
-
-
-
-
-
-
-
-
-
+table td {
+	border: 1px solid black;
+	}
 
 
 
