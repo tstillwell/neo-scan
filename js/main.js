@@ -14,7 +14,7 @@ function loadData() {
 		}).done(function(result) {
 		  var neo_results = result;
 		  var $number_of_neos = neo_results.element_count;
-		  var $results = "";
+		  var $results = "<tr><th>NEO Name</th><th>Est. Diameter</th><th>Miss Distance</th></tr>";
 		  for (var i = 0; i < $number_of_neos; i++) {
 			   $neo = neo_results.near_earth_objects[$date][i]
 			   $result_list_item = "<tr class='neo-item'><td>";
