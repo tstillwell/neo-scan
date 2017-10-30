@@ -17,11 +17,11 @@ function loadData() {
 		  var $results = "";
 		  for (var i = 0; i < $number_of_neos; i++) {
 			   $neo = neo_results.near_earth_objects[$date][i]
-			   console.log($neo);
 			   $result_list_item = "<tr class='neo-item'><td>";
 			   $result_list_item += "<a href='" + $neo.nasa_jpl_url + "'>" + $neo.name + "</a></td>";
 			   $result_list_item += "<td>" + $neo.estimated_diameter.meters.estimated_diameter_min + " meters </td>";
 			   $result_list_item += "<td>" + $neo.estimated_diameter.meters.estimated_diameter_max + " meters </td>";
+			   $result_list_item += "<td>" + $neo.close_approach_data[0].miss_distance.kilometers + " km </td>";
 			   $result_list_item += "</tr>";
 			   $results += $result_list_item;
 			   }
