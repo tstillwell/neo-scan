@@ -19,8 +19,8 @@ function loadData() {
 			   $neo = neo_results.near_earth_objects[$date][i]
 			   $result_list_item = "<tr class='neo-item'><td>";
 			   $result_list_item += "<a href='" + $neo.nasa_jpl_url + "'>" + $neo.name + "</a></td>";
-			   $result_list_item += "<td>" + $neo.estimated_diameter.meters.estimated_diameter_min + " - ";
-			   $result_list_item += $neo.estimated_diameter.meters.estimated_diameter_max + " meters </td>";
+			   $result_list_item += "<td>" + $neo.estimated_diameter.meters.estimated_diameter_min.toFixed(2) + " - ";
+			   $result_list_item += $neo.estimated_diameter.meters.estimated_diameter_max.toFixed(2) + " meters </td>";
 			   $result_list_item += "<td>" + $neo.close_approach_data[0].miss_distance.kilometers + " km </td>";
 			   $result_list_item += "</tr>";
 			   $results += $result_list_item;
