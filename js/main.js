@@ -1,5 +1,4 @@
 function loadData() {
-		var $nasa_elem = $('#nasa-results');
 		var $date = $("#date").val();
 		var nasa_api_url = "https://api.nasa.gov/neo/rest/v1/feed?";
 		nasa_api_url += $.param({
