@@ -26,6 +26,7 @@ function loadData() {
 			   }
 		  $results += "</tbody>";
 		  $("#nasa_results").html($results);
+		  $("#nasa_results").tablesorter();
 		}).fail(function(err) {
 		  var $error_msg = "<span>Nasa Data could not be loaded</span>";
 		  $("#nasa_results").html($error_msg);
