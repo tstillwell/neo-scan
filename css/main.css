@@ -146,6 +146,10 @@ table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSo
 background-color: #8dbdd8;
 }
 
+footer {
+    position: fixed;
+	bottom: 0px;
+	}
 
 /* ==========================================================================
    Helper classes
