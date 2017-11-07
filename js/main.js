@@ -13,7 +13,8 @@ function loadData() {
 		}).done(function(result) {
 		  var neo_results = result;
 		  var $number_of_neos = neo_results.element_count;
-		  var $results = "<thead><tr><th>NEO Name</th><th>Min Est. Diameter (meters)</th><th>Max Est. Diameter (meters)</th><th>Miss Distance (km)</th></tr></thead><tbody>";
+		  var $results = "<thead><tr><th>NEO Name</th><th>Min Est. Diameter (meters)</th>"
+		  $results += "<th>Max Est. Diameter (meters)</th><th>Miss Distance (km)</th></tr></thead><tbody>";
 		  for (var i = 0; i < $number_of_neos; i++) {
 			   $neo = neo_results.near_earth_objects[$date][i];
 			   $result_list_item = "<tr class='neo-item'><td>";
