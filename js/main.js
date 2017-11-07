@@ -15,7 +15,7 @@ function loadData() {
 		  var $number_of_neos = neo_results.element_count;
 		  var $results = "<thead><tr><th>NEO Name</th><th>Min Est. Diameter (meters)</th>"
 		  $results += "<th>Max Est. Diameter (meters)</th><th>Miss Distance (km)</th></tr></thead><tbody>";
-		  for (var i = 0; i < $number_of_neos; i++) {
+		  for (var i = 0; i < $number_of_neos; i++) { // Add a row to table for each NEO in response
 			   $neo = neo_results.near_earth_objects[$date][i];
 			   $result_list_item = "<tr class='neo-item'><td>";
 			   $result_list_item += "<a href='" + $neo.nasa_jpl_url + "'>" + $neo.name + "</a></td>";
