@@ -17,7 +17,7 @@ function loadData() {
 		  $results += "<th>Max Est. Diameter (meters)</th><th>Miss Distance (km)</th></tr></thead><tbody>";
 		  for (var i = 0; i < $number_of_neos; i++) { // Add a row to table for each NEO in response
 			   $neo = neo_results.near_earth_objects[$date][i];
-			   $result_list_item = "<tr class='neo-item'><td>";
+			   $result_list_item = "<tr class='neo-item'><td class='neo-name'>";
 			   $result_list_item += "<a href='" + $neo.nasa_jpl_url + "'>" + $neo.name + "</a></td>";
 			   $result_list_item += "<td>" + $neo.estimated_diameter.meters.estimated_diameter_min.toFixed(2) + "</td>";
 			   $result_list_item += "<td>" + $neo.estimated_diameter.meters.estimated_diameter_max.toFixed(2) + " </td>";
