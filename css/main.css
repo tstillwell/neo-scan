@@ -338,6 +338,9 @@ caption {
 	background-color: #e6bf99;
 }
 
+.miss-distance {
+	float: right;
+}
 
 footer {
     position: fixed;
