@@ -352,6 +352,8 @@ caption {
 }
 
 footer {
+	color: #F8F8FF;
+	background-color: #000;
     position: fixed;
 	bottom: 0px;
 	width: 100%;
