@@ -102,6 +102,10 @@ textarea {
 	margin-left: 0;
 	}
 
+#date {
+	max-width: 35%;
+	}
+
 table {
 	border-collapse: collapse;
 	border: 1px solid black;
