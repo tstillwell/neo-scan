@@ -27,20 +27,21 @@
 		<form id="form-container" class="form-container" onsubmit="return false">
 			<label for="date">Date </label><input class="form-control" type="date" id="date" value="">
 			<button type="button" class="btn-primary" id="submit-btn" onclick="loadData()">Retrieve NEO data</button>
-			<span><button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">[info]</button></span>
+			<span><button type="button" class="btn btn-link" data-toggle="modal" data-target="#infoModal">[info]</button></span>
 		</form>
 		<!-- Modal -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		  <div class="modal-dialog" role="document">
 			<div class="modal-content">
 			  <div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+				<h5 class="modal-title" id="exampleModalLabel">Close NEO info</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				  <span aria-hidden="true">&times;</span>
 				</button>
 			  </div>
 			  <div class="modal-body">
-				...
+				This tool retrieves data from NASA's Near Earth Object Feed and displays
+				objects which are making their closest approach to Earth on the date selected.
 			  </div>
 			  <div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
