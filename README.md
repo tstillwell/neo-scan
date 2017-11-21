@@ -2,8 +2,6 @@
 
 https://api.nasa.gov/api.html#NeoWS
 
-https://mottie.github.io/tablesorter/docs/
-
 Connects to NASA NEOWS API and displays info about nearby 
 Near Earth Objects in the browser.
 
@@ -14,6 +12,9 @@ Thanks to
 
 NASA
 HTML5 BOILERPLATE
-tablesorter library
+
+Tablesorter library
+https://mottie.github.io/tablesorter/docs/
+
 Bootstrap
 jQuery
