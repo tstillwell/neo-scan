@@ -10,3 +10,10 @@ Near Earth Objects in the browser.
 Please get an API key and add it in if you'll be
 running more than a few queries.
 
+Thanks to
+
+NASA
+HTML5 BOILERPLATE
+tablesorter library
+Bootstrap
+jQuery
