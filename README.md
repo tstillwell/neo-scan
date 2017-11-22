@@ -18,6 +18,8 @@ Tablesorter library
 
 https://mottie.github.io/tablesorter/docs/
 
-Bootstrap
+Bootstrap 4
+
+https://getbootstrap.com/
 
 jQuery
