@@ -11,10 +11,13 @@ running more than a few queries.
 Thanks to
 
 NASA
+
 HTML5 BOILERPLATE
 
 Tablesorter library
+
 https://mottie.github.io/tablesorter/docs/
 
 Bootstrap
+
 jQuery
