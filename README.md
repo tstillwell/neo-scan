@@ -1,7 +1,5 @@
 # neo-scan
 
-https://api.nasa.gov/api.html#NeoWS
-
 Connects to NASA NEOWS API and displays info about nearby 
 Near Earth Objects in the browser.
 
@@ -10,7 +8,11 @@ running more than a few queries.
 
 Thanks to
 
-NASA
+NASA NeoWS API
+
+https://api.nasa.gov/#getting-started
+
+https://api.nasa.gov/api.html#NeoWS
 
 HTML5 BOILERPLATE
 
