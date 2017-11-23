@@ -8,22 +8,22 @@ running more than a few queries.
 
 Thanks to
 
-NASA NeoWS API
+## NASA NeoWS API
 
 https://api.nasa.gov/#getting-started
 
 https://api.nasa.gov/api.html#NeoWS
 
-HTML5 BOILERPLATE
+## HTML5 BOILERPLATE
 
-Tablesorter library
+##Tablesorter library
 
 https://mottie.github.io/tablesorter/docs/
 
-Bootstrap 4
+##Bootstrap 4
 
 https://getbootstrap.com/
 
-jQuery
+##jQuery
 
-Wikipedia
+##Wikipedia
