@@ -1,4 +1,4 @@
-# neo-scan
+### neo-scan
 
 Connects to NASA NEOWS API and displays info about nearby 
 Near Earth Objects in the browser.
@@ -16,14 +16,14 @@ https://api.nasa.gov/api.html#NeoWS
 
 ## HTML5 BOILERPLATE
 
-##Tablesorter library
+## Tablesorter library
 
 https://mottie.github.io/tablesorter/docs/
 
-##Bootstrap 4
+## Bootstrap 4
 
 https://getbootstrap.com/
 
-##jQuery
+## jQuery
 
-##Wikipedia
+## Wikipedia
