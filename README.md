@@ -3,6 +3,9 @@
 Connects to NASA NEOWS API and displays info about nearby 
 Near Earth Objects in the browser.
 
+The code which fetches the data from the API
+is in js/main.js
+
 Please get an API key and add it in if you'll be
 running more than a few queries.
 
