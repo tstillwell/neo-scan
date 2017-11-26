@@ -11,7 +11,8 @@ running more than a few queries.
 
 In main.js
 
-'api_key' : 'DEMO_KEY'
+
+`'api_key' : 'DEMO_KEY'`
 
 Replace DEMO_KEY with your actual API key or your
 requests will be automatically rate-limited.
