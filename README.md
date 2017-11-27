@@ -19,7 +19,7 @@ the top that has:
 Replace DEMO_KEY with your actual API key or your
 requests will be automatically rate-limited.
 
-Thanks to
+## Thanks to 
 
 ### NASA NeoWS API
 
