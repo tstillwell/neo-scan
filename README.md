@@ -26,7 +26,7 @@ https://api.nasa.gov/#getting-started
 
 https://api.nasa.gov/api.html#NeoWS
 
-### HTML5 BOILERPLATE
+### HTML5 Boilerplate
 
 ### Tablesorter library
 
