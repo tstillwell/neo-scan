@@ -12,6 +12,10 @@ https://api.nasa.gov/#getting-started
 
 ## Get an API key
 
+Sign up for a NASA API key here
+
+https://api.nasa.gov/index.html#apply-for-an-api-key
+
 To change the API key open
 `js/main.js` and look for the line near
 the top that has:
