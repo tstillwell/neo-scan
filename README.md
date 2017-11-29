@@ -1,10 +1,14 @@
 # neo-scan
 
-Connects to NASA NEOWS API and displays info about nearby 
-Near Earth Objects in the browser.
+Connects to NASA NEOWS API and displays info about nearby Near Earth Objects in the browser.
 
 The code which fetches the data from the API
 is in js/main.js
+
+This API is documented here:
+
+https://api.nasa.gov/#getting-started
+
 
 ## Get an API key
 
@@ -21,8 +25,6 @@ requests will be automatically rate-limited.
 ## Thanks to 
 
 ### NASA NeoWS API
-
-https://api.nasa.gov/#getting-started
 
 https://api.nasa.gov/api.html#NeoWS
 
