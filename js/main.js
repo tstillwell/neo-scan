@@ -38,3 +38,5 @@ function loadData() {
 		  throw err;
 		});
 }
+
+document.getElementById("submit-btn").addEventListener("click", loadData);
