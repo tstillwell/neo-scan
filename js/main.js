@@ -41,7 +41,7 @@ function loadData() {
 
 document.getElementById("submit-btn").addEventListener("click", loadData);
 
-function formattedDate() {
+function todayDate() {
 var today = new Date();
 var dd = today.getDate();
 var mm = today.getMonth()+1;
@@ -58,4 +58,4 @@ today = yyyy + '-' + mm + '-' + dd
 return today;
 }
 
-$("#date").val(formattedDate());
+$("#date").val(todayDate());
