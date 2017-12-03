@@ -58,4 +58,4 @@ today = yyyy + '-' + mm + '-' + dd
 return today;
 }
 
-console.log(formattedDate());
+$("#date").val(formattedDate());
