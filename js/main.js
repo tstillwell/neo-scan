@@ -6,7 +6,7 @@ function loadData() {
 				  'end_date' : $date,
 				  'api_key' : 'DEMO_KEY'  // NASA API key get one from api.nasa.gov
 			});
-		console.log(nasa_api_url);
+		// console.log(nasa_api_url);
 		$.ajax({
 		  url: nasa_api_url,
 		  method: 'GET',
