@@ -27,7 +27,7 @@ function loadData() {
 			   }
 		  $results += "</tbody>";
 		  $("#nasa_results").html($results);
-		  $("#nasa_results").tablesorter({
+		  $("#nasa_results").tablesorter({ // tablesorter config
 			theme: 'blue',
 			widgets: ["zebra"]
 			});
