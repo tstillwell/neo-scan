@@ -112,6 +112,10 @@ table td {
 	border: 1px solid black;
 	}
 
+.apierror  {
+	color: red;
+	}
+
 /* tables */
 /*************
   Blue Theme
