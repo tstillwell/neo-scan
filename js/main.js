@@ -33,8 +33,8 @@ function loadData() {
 			});
 		  $("#nasa_results").trigger('applyWidgets')
 		}).fail(function(err) {
-		  var $error_msg = "<span class='apierror'>Nasa Data could not be loaded</span>";
-		  $("#nasa_results").html($error_msg);
+		  var $error_msg = "<span>Nasa Data could not be loaded</span>";
+		  $(".apierror").html($error_msg);
 		  throw err;
 		});
 }
