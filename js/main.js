@@ -28,7 +28,7 @@ function loadData() {
 		  $results += "</tbody>";
 		  $("#nasa_results").html($results);
 		  $("#nasa_results").tablesorter({ theme: 'blue', widgets: ["zebra"] });
-		  $("#nasa_results").trigger('applyWidgets')
+		  $("#nasa_results").trigger('applyWidgets');
 		}).fail(function(err) {
 		  var $error_msg = "<span>Nasa Data could not be loaded</span>";
 		  $(".apierror").html($error_msg);
