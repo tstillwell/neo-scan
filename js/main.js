@@ -26,9 +26,9 @@ function loadData() {
 			   $results += $result_list_item;
 			   }
 		  $results += "</tbody>";
-		  $("#nasa_results").html($results);
-		  $("#nasa_results").tablesorter({ theme: 'blue', widgets: ["zebra"] });
-		  $("#nasa_results").trigger('applyWidgets');
+		  $("#nasa-results").html($results);
+		  $("#nasa-results").tablesorter({ theme: 'blue', widgets: ["zebra"] });
+		  $("#nasa-results").trigger('applyWidgets');
 		}).fail(function(err) {
 		  var $error_msg = "<span>Nasa Data could not be loaded</span>";
 		  $(".apierror").html($error_msg);
