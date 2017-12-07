@@ -116,6 +116,11 @@ table td {
 	color: red;
 	}
 
+.modal-link {
+	display: block;
+	margin-top: 1em;
+	}
+
 /* tables */
 /*************
   Blue Theme
