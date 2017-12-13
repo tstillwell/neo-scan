@@ -352,6 +352,10 @@ caption {
 	background-color: #e6bf99;
 }
 
+.form-check {
+	margin: 1em;
+}
+
 .miss-distance {
 	float: right;
 }
