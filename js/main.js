@@ -1,4 +1,4 @@
-function loadData() {
+function loadData() { // retrieve data from API and build table
 		var date = $("#date").val();
 		var nasa_api_url = "https://api.nasa.gov/neo/rest/v1/feed?";
 		nasa_api_url += $.param({
