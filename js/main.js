@@ -29,8 +29,8 @@ function loadData() { // retrieve data from API and build table
 		  $("#nasa-results").html(results);
 		  $("#nasa-results").tablesorter({ theme: 'blue', widgets: ["zebra"] }).trigger('applyWidgets');
 		}).fail(function(err) {
-		  var $error_msg = "<span>Nasa Data could not be loaded</span>";
-		  $(".apierror").html($error_msg);
+		  var error_msg = "<span>Nasa Data could not be loaded</span>";
+		  $(".apierror").html(error_msg);
 		  throw err;
 		});
 }
