@@ -37,7 +37,7 @@ function loadData() { // retrieve data from API and build table
 
 document.getElementById("submit-btn").addEventListener("click", loadData);
 
-function todayDate() {
+function todayDate() { // return today's date in yyyy-mm-dd format
 var today = new Date();
 var dd = today.getDate();
 var mm = today.getMonth()+1;
