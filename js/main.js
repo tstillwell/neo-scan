@@ -35,7 +35,13 @@ function loadData() { // retrieve data from API and build table
 		});
 }
 
+function changeUnits() {
+		console.log("Change units button clicked");
+	}
+
 document.getElementById("submit-btn").addEventListener("click", loadData);
+document.getElementById("units-button").addEventListener("click", changeUnits);
+
 
 function todayDate() { // return today's date in yyyy-mm-dd format
 var today = new Date();
