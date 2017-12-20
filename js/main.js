@@ -55,3 +55,4 @@ return today;
 }
 
 $("#date").val(todayDate());
+$("#radioMeters").prop("checked", true);
