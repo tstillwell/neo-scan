@@ -40,7 +40,7 @@ function changeUnits() {
 	}
 
 document.getElementById("submit-btn").addEventListener("click", loadData);
-document.getElementById("units-button").addEventListener("click", changeUnits);
+document.getElementById("units-btn").addEventListener("click", changeUnits);
 
 
 function todayDate() { // return today's date in yyyy-mm-dd format
