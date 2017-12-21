@@ -40,6 +40,10 @@ function loadData() { // retrieve data from API and build table
 function changeUnits() {
 		console.log("Change units button clicked");
 	}
+	
+function meters_selected() {
+		return document.getElementById('radioMeters').checked ?  true : false;
+	}
 
 document.getElementById("submit-btn").addEventListener("click", loadData);
 document.getElementById("units-btn").addEventListener("click", changeUnits);
