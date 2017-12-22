@@ -13,8 +13,8 @@ function loadData() { // retrieve data from API and build table
 		}).done(function(result) {
 		  var neo_results = result;
 		  var number_of_neos = neo_results.element_count;
-		  var selected_size_unit;
-		  var selected_distance_unit;
+		  var size_unit;
+		  var distance_unit;
 		  var results = "<thead><tr><th>NEO Name</th><th>Min Est. Diameter (meters)</th>";
 		  results += "<th>Max Est. Diameter (meters)</th><th>Miss Distance (km)</th></tr></thead><tbody>";
 		  for (var i = 0; i < number_of_neos; i++) { // Add a row to table for each NEO in response
