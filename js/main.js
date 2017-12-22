@@ -45,6 +45,10 @@ function meters_selected() {
 		return document.getElementById('radioMeters').checked ?  true : false;
 	}
 
+function km_selected() {
+		return document.getElementById('radioKM').checked ? true : false;
+	}
+
 document.getElementById("submit-btn").addEventListener("click", loadData);
 document.getElementById("units-btn").addEventListener("click", changeUnits);
 
