@@ -43,11 +43,11 @@ function changeUnits() {
 		console.log("Change units button clicked");
 	}
 	
-function meters_selected() {
+function meters_selected() {  // return true if meters is selected size unit
 		return document.getElementById('radioMeters').checked ?  true : false;
 	}
 
-function km_selected() {
+function km_selected() {  // return true if km is selected distance unit
 		return document.getElementById('radioKM').checked ? true : false;
 	}
 
