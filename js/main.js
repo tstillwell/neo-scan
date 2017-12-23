@@ -16,8 +16,9 @@ function loadData() { // retrieve data from API and build table
 		  var size_unit;
 		  meters_selected() ? size_unit = 'meters' : size_unit = 'feet';
 		  var distance_unit;
+		  km_selected() ? distance_unit = 'km' : distance_unit = 'mi';
 		  var results = "<thead><tr><th>NEO Name</th><th>Min Est. Diameter (" + size_unit + ")</th>";
-		  results += "<th>Max Est. Diameter (" + size_unit + ")</th><th>Miss Distance (km)</th></tr></thead><tbody>";
+		  results += "<th>Max Est. Diameter (" + size_unit + ")</th><th>Miss Distance (" + distance_unit + ")</th></tr></thead><tbody>";
 		  for (var i = 0; i < number_of_neos; i++) { // Add a row to table for each NEO in response
 			   neo = neo_results.near_earth_objects[date][i];
 			   result_list_item = "<tr class='neo-item'><td class='neo-name'>";
