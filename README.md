@@ -30,6 +30,11 @@ If you want the data this tool uses you can download it here
 
 https://ssd.jpl.nasa.gov/?sb_elem
 
+## Obtaining the data
+The data used by this tool can be downloaded from here:
+
+https://ssd.jpl.nasa.gov/sbdb_query.cgi
+
 ## Thanks to 
 
 ### NASA NeoWS API
