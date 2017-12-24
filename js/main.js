@@ -16,7 +16,7 @@ function loadData() { // retrieve data from API and build table
 		  var size_unit;
 		  meters_selected() ? size_unit = 'meters' : size_unit = 'feet';
 		  var distance_unit;
-		  km_selected() ? distance_unit = 'km' : distance_unit = 'mi';
+		  km_selected() ? distance_unit = 'kilometers' : distance_unit = 'miles';
 		  var results = "<thead><tr><th>NEO Name</th><th>Min Est. Diameter (" + size_unit + ")</th>";
 		  results += "<th>Max Est. Diameter (" + size_unit + ")</th><th>Miss Distance (" + distance_unit + ")</th></tr></thead><tbody>";
 		  for (var i = 0; i < number_of_neos; i++) { // Add a row to table for each NEO in response
@@ -25,7 +25,7 @@ function loadData() { // retrieve data from API and build table
 			   result_list_item += "<a href='" + neo.nasa_jpl_url + "'>" + neo.name + "</a></td>";
 			   result_list_item += "<td>" + neo.estimated_diameter[size_unit].estimated_diameter_min.toFixed(2) + "</td>";
 			   result_list_item += "<td>" + neo.estimated_diameter[size_unit].estimated_diameter_max.toFixed(2) + " </td>";
-			   result_list_item += "<td><span class='miss-distance'>" + Math.round(neo.close_approach_data[0].miss_distance.kilometers) + "</span></td>";
+			   result_list_item += "<td><span class='miss-distance'>" + Math.round(neo.close_approach_data[0].miss_distance[distance_unit]) + "</span></td>";
 			   result_list_item += "</tr>";
 			   results += result_list_item;
 			   }
