@@ -44,11 +44,11 @@ function changeUnits() {
 	}
 	
 function meters_selected() {  // return true if meters is selected size unit
-		return document.getElementById('radioMeters').checked ?  true : false;
+		return document.getElementById('radioMeters').checked;
 	}
 
 function km_selected() {  // return true if km is selected distance unit
-		return document.getElementById('radioKM').checked ? true : false;
+		return document.getElementById('radioKM').checked;
 	}
 
 document.getElementById("submit-btn").addEventListener("click", loadData);
