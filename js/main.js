@@ -23,8 +23,8 @@ function loadData() { // retrieve data from API and build table
 			   neo = neo_results.near_earth_objects[date][i];
 			   result_list_item = "<tr class='neo-item'><td class='neo-name'>";
 			   result_list_item += "<a href='" + neo.nasa_jpl_url + "'>" + neo.name + "</a></td>";
-			   result_list_item += "<td>" + neo.estimated_diameter.meters.estimated_diameter_min.toFixed(2) + "</td>";
-			   result_list_item += "<td>" + neo.estimated_diameter.meters.estimated_diameter_max.toFixed(2) + " </td>";
+			   result_list_item += "<td>" + neo.estimated_diameter[size_unit].estimated_diameter_min.toFixed(2) + "</td>";
+			   result_list_item += "<td>" + neo.estimated_diameter[size_unit].estimated_diameter_max.toFixed(2) + " </td>";
 			   result_list_item += "<td><span class='miss-distance'>" + Math.round(neo.close_approach_data[0].miss_distance.kilometers) + "</span></td>";
 			   result_list_item += "</tr>";
 			   results += result_list_item;
