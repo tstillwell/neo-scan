@@ -11,14 +11,13 @@ function loadData() { // retrieve data from API and build table
 		  url: nasa_api_url,
 		  method: 'GET',
 		}).done(function(result) {
-		  var neo_results = result;
-		  var number_of_neos = neo_results.element_count;
+		  var number_of_neos = result.element_count;
 		  meters_selected() ? size_unit = 'meters' : size_unit = 'feet';
 		  km_selected() ? distance_unit = 'kilometers' : distance_unit = 'miles';
 		  var result_table = "<thead><tr><th>NEO Name</th><th>Min Est. Diameter (" + size_unit + ")</th>";
 		  result_table += "<th>Max Est. Diameter (" + size_unit + ")</th><th>Miss Distance (" + distance_unit + ")</th></tr></thead><tbody>";
 		  for (var i = 0; i < number_of_neos; i++) { // Add a row to table for each NEO in response
-			   neo = neo_results.near_earth_objects[date][i];
+			   neo = result.near_earth_objects[date][i];
 			   result_list_item = "<tr class='neo-item'><td class='neo-name'>";
 			   result_list_item += "<a href='" + neo.nasa_jpl_url + "'>" + neo.name + "</a></td>";
 			   result_list_item += "<td>" + neo.estimated_diameter[size_unit].estimated_diameter_min.toFixed(2) + "</td>";
