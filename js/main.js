@@ -37,7 +37,7 @@ function loadData() { // retrieve data from API and build table
 }
 
 function changeUnits() {
-		console.log("Change units button clicked");
+		loadData();
 	}
 	
 function meters_selected() {  // return true if meters is selected size unit
