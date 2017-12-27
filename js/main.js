@@ -12,8 +12,8 @@ function loadData() { // retrieve data from API and build table
 		  method: 'GET',
 		}).done(function(result) {
 		  var number_of_neos = result.element_count;
-		  meters_selected() ? size_unit = 'meters' : size_unit = 'feet';
-		  km_selected() ? distance_unit = 'kilometers' : distance_unit = 'miles';
+		  var size_unit = meters_selected() ? 'meters' : 'feet';
+		  var distance_unit = km_selected() ? 'kilometers' : 'miles';
 		  var result_table = "<thead><tr><th>NEO Name</th><th>Min Est. Diameter (" + size_unit + ")</th>";
 		  result_table += "<th>Max Est. Diameter (" + size_unit + ")</th><th>Miss Distance (" + distance_unit + ")</th></tr></thead><tbody>";
 		  for (var i = 0; i < number_of_neos; i++) { // Add a row to table for each NEO in response
