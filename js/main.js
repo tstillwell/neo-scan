@@ -53,21 +53,21 @@ document.getElementById("units-btn").addEventListener("click", changeUnits);
 
 
 function todayDate() { // return today's date in yyyy-mm-dd format
-var today = new Date();
-var dd = today.getDate();
-var mm = today.getMonth()+1;
-var yyyy = today.getFullYear();
+	var today = new Date();
+	var dd = today.getDate();
+	var mm = today.getMonth()+1;
+	var yyyy = today.getFullYear();
 
-if(dd<10) {
-    dd = '0'+ dd;
-}
+	if(dd<10) {
+		dd = '0'+ dd;
+	}
 
-if(mm<10) {
-    mm = '0'+ mm;
-}
-today = yyyy + '-' + mm + '-' + dd;
-return today;
-}
+	if(mm<10) {
+		mm = '0'+ mm;
+	}
+	today = yyyy + '-' + mm + '-' + dd;
+	return today;
+	}
 
 $("#date").val(todayDate());
 $("#radioMeters").prop("checked", true);
