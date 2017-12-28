@@ -48,8 +48,8 @@ function km_selected() {  // return true if km is selected distance unit
 		return document.getElementById('radioKM').checked;
 	}
 
-document.getElementById("submit-btn").addEventListener("click", loadData);
-document.getElementById("units-btn").addEventListener("click", changeUnits);
+document.querySelector("#submit-btn").addEventListener("click", loadData);
+document.querySelector("#units-btn").addEventListener("click", changeUnits);
 
 
 function todayDate() { // return today's date in yyyy-mm-dd format
