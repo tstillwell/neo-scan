@@ -23,6 +23,7 @@ function loadData() { // retrieve data from API and build table
 			   result_list_item += "<td>" + neo.estimated_diameter[size_unit].estimated_diameter_min.toFixed(2) + "</td>";
 			   result_list_item += "<td>" + neo.estimated_diameter[size_unit].estimated_diameter_max.toFixed(2) + " </td>";
 			   result_list_item += "<td><span class='miss-distance' data-distance-miles='" + Math.round(neo.close_approach_data[0].miss_distance.miles);
+			   result_list_item += "' data-distance-km='" + Math.round(neo.close_approach_data[0].miss_distance.kilometers);
 			   result_list_item += "'>" + Math.round(neo.close_approach_data[0].miss_distance[distance_unit]) + "</span></td>";
 			   result_list_item += "</tr>";
 			   result_table += result_list_item;
