@@ -20,7 +20,8 @@ function loadData() { // retrieve data from API and build table
 			   neo = result.near_earth_objects[date][i];
 			   result_list_item = "<tr class='neo-item'><td class='neo-name'>";
 			   result_list_item += "<a href='" + neo.nasa_jpl_url + "'>" + neo.name + "</a></td>";
-			   result_list_item += "<td>" + "<span class='diameter-min'>";
+			   result_list_item += "<td>" + "<span class='diameter-min' data-dmin-feet='" + neo.estimated_diameter.feet.estimated_diameter_min.toFixed(2)
+			   result_list_item + " data-dmin-meters='" + neo.estimated_diameter.meters.estimated_diameter_min.toFixed(2) + "'>";
 			   result_list_item += neo.estimated_diameter[size_unit].estimated_diameter_min.toFixed(2) + "</span></td>";
 			   result_list_item += "<td>" + "<span class='diameter-max'>";
 			   result_list_item += neo.estimated_diameter[size_unit].estimated_diameter_max.toFixed(2) + " </td>";
