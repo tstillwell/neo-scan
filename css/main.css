@@ -373,6 +373,10 @@ caption {
 	transform: translate(-50%, -50%);
 }
 
+.api-footer-blurb a {
+	color: #99bfe6;
+}
+
 .api-footer-blurb a:hover {
 	text-decoration: none;
 }
