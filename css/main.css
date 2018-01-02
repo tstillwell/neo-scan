@@ -373,6 +373,10 @@ caption {
 	transform: translate(-50%, -50%);
 }
 
+.api-footer-blurb a:hover {
+	text-decoration: none;
+}
+
 footer {
 	color: #F8F8FF;
 	background-color: #000;
