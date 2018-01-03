@@ -9,6 +9,7 @@ This API is documented here:
 
 https://api.nasa.gov/#getting-started
 
+To run the app, open `index.html` in your browser
 
 ## Get an API key
 
