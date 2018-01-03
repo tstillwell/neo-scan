@@ -12,6 +12,8 @@ https://api.nasa.gov/#getting-started
 To run the app, open `index.html` in your browser
 
 ## Get an API key
+If you want to use the app past a few queries,
+you need to get a free API key from NASA
 
 Sign up for a NASA API key here
 
