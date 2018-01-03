@@ -27,9 +27,6 @@ the top that has:
 Replace DEMO_KEY with your actual API key or your
 requests will be automatically rate-limited.
 
-If you want the data this tool uses you can download it here
-
-https://ssd.jpl.nasa.gov/?sb_elem
 
 ## Obtaining the data
 The data used by this tool can be downloaded from here:
