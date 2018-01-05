@@ -47,6 +47,9 @@ function loadData() { // retrieve data from API and build table
 }
 
 function changeUnits() {
+		$min_distance_cells = $(".diameter-min");
+		$max_distance_cells = $(".diameter-max");
+		$miss_distance_cells = $(".miss-distance");
 		loadData();
 	}
 	
