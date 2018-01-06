@@ -50,6 +50,14 @@ function changeUnits() {
 		$min_distance_cells = $(".diameter-min");
 		$max_distance_cells = $(".diameter-max");
 		$miss_distance_cells = $(".miss-distance");
+		if (meters_selected() == true){ // loop over each min value
+			$min_distance_cells.each(function(element){
+				console.log(this);
+			});
+			$max_distance_cells.each(function(element){
+				console.log(this);
+			});
+		 }
 		loadData();
 	}
 	
