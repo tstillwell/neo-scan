@@ -51,13 +51,21 @@ function changeUnits() {
 		$max_distance_cells = $(".diameter-max");
 		$miss_distance_cells = $(".miss-distance");
 		if (meters_selected() == true){ // loop over each min value
-			$min_distance_cells.each(function(element){
+			$min_distance_cells.each(function(index){
 				console.log(this);
 			});
 			$max_distance_cells.each(function(element){
 				console.log(this);
 			});
 		 }
+		else {
+			$min_distance_cells.each(function(index){
+				console.log(this);
+			});
+			$max_distance_cells.each(function(element){
+				console.log(this);
+			});
+		}
 		loadData();
 	}
 	
