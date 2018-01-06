@@ -66,6 +66,11 @@ function changeUnits() {
 				console.log(this);
 			});
 		}
+		if (km_selected() == true){
+			$miss_distance_cells.each(function(element){
+				console.log(this);
+			});
+		}
 		loadData();
 	}
 	
