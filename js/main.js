@@ -52,31 +52,30 @@ function changeUnits() {
 		$miss_distance_cells = $(".miss-distance");
 		if (meters_selected() == true){ // loop over each min value
 			$min_distance_cells.each(function(index){
-				console.log(this);
+				$min_distance_cells[index].innerHTML = this.dataset["dminMeters"];
 			});
 			$max_distance_cells.each(function(index){
-				console.log(this);
+				$max_distance_cells[index].innerHTML = this.dataset["dmaxMeters"];
 			});
 		 }
 		else {
 			$min_distance_cells.each(function(index){
-				console.log(this);
+				$min_distance_cells[index].innerHTML = this.dataset["dminFeet"];
 			});
 			$max_distance_cells.each(function(index){
-				console.log(this);
+				$max_distance_cells[index].innerHTML = this.dataset["dmaxFeet"];
 			});
 		}
 		if (km_selected() == true){
 			$miss_distance_cells.each(function(index){
-				console.log(this);
+				$miss_distance_cells[index].innerHTML = this.dataset["distanceKm"];
 			});
 		}
 		else {
 			$miss_distance_cells.each(function(index){
-				console.log(this);
+				$miss_distance_cells[index].innerHTML = this.dataset["distanceMiles"];
 			});
 		}
-		loadData();
 	}
 	
 function meters_selected() {  // return true if meters is selected size unit
