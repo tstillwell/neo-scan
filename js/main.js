@@ -54,7 +54,7 @@ function changeUnits() {
 			$min_distance_cells.each(function(index){
 				console.log(this);
 			});
-			$max_distance_cells.each(function(element){
+			$max_distance_cells.each(function(index){
 				console.log(this);
 			});
 		 }
@@ -62,17 +62,17 @@ function changeUnits() {
 			$min_distance_cells.each(function(index){
 				console.log(this);
 			});
-			$max_distance_cells.each(function(element){
+			$max_distance_cells.each(function(index){
 				console.log(this);
 			});
 		}
 		if (km_selected() == true){
-			$miss_distance_cells.each(function(element){
+			$miss_distance_cells.each(function(index){
 				console.log(this);
 			});
 		}
 		else {
-			$miss_distance_cells.each(function(element){
+			$miss_distance_cells.each(function(index){
 				console.log(this);
 			});
 		}
