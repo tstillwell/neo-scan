@@ -71,6 +71,11 @@ function changeUnits() {
 				console.log(this);
 			});
 		}
+		else {
+			$miss_distance_cells.each(function(element){
+				console.log(this);
+			});
+		}
 		loadData();
 	}
 	
