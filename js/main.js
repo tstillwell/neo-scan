@@ -57,6 +57,8 @@ function changeUnits() {  // Change units used in table when 'confirm' button in
 			$max_distance_cells.each(function(index){
 				$max_distance_cells[index].innerHTML = this.dataset["dmaxMeters"];
 			});
+			$("#min-dis-hdr").html("Min Est. Diameter (meters)");
+			$("#max-dis-hdr").html("Max Est. Diameter (meters)");
 		 }
 		else {
 			$min_distance_cells.each(function(index){
@@ -65,16 +67,20 @@ function changeUnits() {  // Change units used in table when 'confirm' button in
 			$max_distance_cells.each(function(index){
 				$max_distance_cells[index].innerHTML = this.dataset["dmaxFeet"];
 			});
+			$("#min-dis-hdr").html("Min Est. Diameter (feet)");
+			$("#max-dis-hdr").html("Max Est. Diameter (feet)");
 		}
 		if (km_selected() == true){
 			$miss_distance_cells.each(function(index){
 				$miss_distance_cells[index].innerHTML = this.dataset["distanceKm"];
 			});
+			$("#miss-dis-hdr").html("Miss Distance (km)");
 		}
 		else {
 			$miss_distance_cells.each(function(index){
 				$miss_distance_cells[index].innerHTML = this.dataset["distanceMiles"];
 			});
+			$("#miss-dis-hdr").html("Miss Distance (miles)");
 		}
 	}
 	
