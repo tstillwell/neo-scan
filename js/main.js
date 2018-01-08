@@ -46,7 +46,7 @@ function loadData() { // retrieve data from API and build table
 		});
 }
 
-function changeUnits() {  // Change units used in table when 'confirm' button in change units dialogue
+function changeUnits() {  // Change units used in table when 'confirm' button for change units is clicked
 		$min_distance_cells = $(".diameter-min");
 		$max_distance_cells = $(".diameter-max");
 		$miss_distance_cells = $(".miss-distance");
