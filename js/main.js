@@ -46,11 +46,11 @@ function loadData() { // retrieve data from API and build table
 		});
 }
 
-function changeUnits() {
+function changeUnits() {  // Change units used in table when 'confirm' button in change units dialogue
 		$min_distance_cells = $(".diameter-min");
 		$max_distance_cells = $(".diameter-max");
 		$miss_distance_cells = $(".miss-distance");
-		if (meters_selected() == true){ // loop over each min value
+		if (meters_selected() == true){
 			$min_distance_cells.each(function(index){
 				$min_distance_cells[index].innerHTML = this.dataset["dminMeters"];
 			});
