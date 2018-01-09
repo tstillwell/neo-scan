@@ -113,6 +113,6 @@ function todayDate() { // return today's date in yyyy-mm-dd format
 	return today;
 	}
 
-$("#date").val(todayDate());
+$("#date").val(todayDate());  // default date in field to today's date
 $("#radioMeters").prop("checked", true);
 $("#radioKM").prop("checked", true);
