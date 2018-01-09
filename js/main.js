@@ -105,7 +105,6 @@ function todayDate() { // return today's date in yyyy-mm-dd format
 	if(dd<10) {
 		dd = '0'+ dd;
 	}
-
 	if(mm<10) {
 		mm = '0'+ mm;
 	}
