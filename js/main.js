@@ -74,7 +74,7 @@ function changeUnits() {  // Change units used in table when 'confirm' button fo
 			$miss_distance_cells.each(function(index){
 				$miss_distance_cells[index].innerHTML = this.dataset["distanceKm"];
 			});
-			$("#miss-dis-hdr").html("Miss Distance (km)");
+			$("#miss-dis-hdr").html("Miss Distance (kilometers)");
 		}
 		else {
 			$miss_distance_cells.each(function(index){
