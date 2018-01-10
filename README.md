@@ -3,6 +3,7 @@
 Connects to NASA NEOWS API and displays  approximate distance
 and estimated size info about nearby Near Earth Objects in the browser.
 
+## NASA NEOWS API
 The code which fetches the data from the API
 is in js/main.js
 
