@@ -1,6 +1,7 @@
 # neo-scan
 
-Connects to NASA NEOWS API and displays info about nearby Near Earth Objects in the browser.
+Connects to NASA NEOWS API and displays  approximate distance
+and estimated size info about nearby Near Earth Objects in the browser.
 
 The code which fetches the data from the API
 is in js/main.js
