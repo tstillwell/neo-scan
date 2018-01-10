@@ -92,10 +92,6 @@ function km_selected() {  // return true if km is selected distance unit
 		return document.querySelector('#radioKM').checked;
 	}
 
-document.querySelector("#submit-btn").addEventListener("click", loadData);
-document.querySelector("#units-btn").addEventListener("click", changeUnits);
-
-
 function todayDate() { // return today's date in yyyy-mm-dd format
 	var today = new Date();
 	var dd = today.getDate();
@@ -112,6 +108,8 @@ function todayDate() { // return today's date in yyyy-mm-dd format
 	return today;
 	}
 
+document.querySelector("#submit-btn").addEventListener("click", loadData);
+document.querySelector("#units-btn").addEventListener("click", changeUnits);
 $("#date").val(todayDate());  // default date in field to today's date
 $("#radioMeters").prop("checked", true);
 $("#radioKM").prop("checked", true);
