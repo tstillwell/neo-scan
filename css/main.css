@@ -107,13 +107,13 @@ textarea {
 	margin-left: 0;
 	}
 
-table {
+#nasa-results {
 	border-collapse: collapse;
 	border: 1px solid black;
 	max-width: 50%;
 	}
 
-table td {
+#nasa-results td {
 	border: 1px solid black;
 	}
 
