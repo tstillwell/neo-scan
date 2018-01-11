@@ -110,11 +110,6 @@ textarea {
 #nasa-results {
 	border-collapse: collapse;
 	border: 1px solid black;
-	max-width: 50%;
-	}
-
-#nasa-results td {
-	border: 1px solid black;
 	}
 
 .apierror  {
