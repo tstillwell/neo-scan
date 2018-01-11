@@ -2,9 +2,9 @@ function loadData() { // retrieve data from API and build table
 		var date = $("#date").val();
 		var nasa_api_url = "https://api.nasa.gov/neo/rest/v1/feed?";
 		nasa_api_url += $.param({
-				  'start_date' : date,
-				  'end_date' : date,
-				  'api_key' : 'DEMO_KEY'  // NASA API key get one from api.nasa.gov
+			'start_date' : date,
+			'end_date' : date,
+			'api_key' : 'DEMO_KEY'  // NASA API key get one from api.nasa.gov
 			});
 		// console.log(nasa_api_url);
 		$.ajax({
