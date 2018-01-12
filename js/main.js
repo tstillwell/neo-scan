@@ -50,7 +50,7 @@ function changeUnits() {  // Change units used in table when 'confirm' button fo
         $min_distance_cells = $(".diameter-min");
         $max_distance_cells = $(".diameter-max");
         $miss_distance_cells = $(".miss-distance");
-        if (meters_selected() == true){
+        if (meters_selected()){
             $min_distance_cells.each(function(index){
                 $min_distance_cells[index].innerHTML = this.dataset["dminMeters"];
             });
@@ -70,7 +70,7 @@ function changeUnits() {  // Change units used in table when 'confirm' button fo
             $("#min-dis-hdr").html("Min Est. Diameter (feet)");
             $("#max-dis-hdr").html("Max Est. Diameter (feet)");
         }
-        if (km_selected() == true){
+        if (km_selected()){
             $miss_distance_cells.each(function(index){
                 $miss_distance_cells[index].innerHTML = this.dataset["distanceKm"];
             });
