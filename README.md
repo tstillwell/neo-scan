@@ -5,7 +5,7 @@ and estimated size info about nearby Near Earth Objects in the browser.
 
 ## NASA NEOWS API
 The code which fetches the data from the API
-is in js/main.js
+is in `js/main.js`
 
 This API is documented here:
 
