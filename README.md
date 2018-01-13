@@ -37,6 +37,11 @@ The data used by this tool can be downloaded from here:
 
 https://ssd.jpl.nasa.gov/sbdb_query.cgi
 
+## Contributing
+If you would like to add a new feature, change functionality, or use this tool in another project, feel free to fork the repository. If you feel your changes are a good direction for the project, open a pull request with a summary of your changes, and it will be reviewed.
+
+If you find a bug or would like to see features added or changed, please open an issue on the github project.
+
 ## Thanks to 
 
 ### NASA NeoWS API
