@@ -78,7 +78,7 @@ function changeUnits() {  // Change units used in table when 'confirm' button fo
         }
         else {
             $miss_distance_cells.each(function(index){
-                miss_distance_cells[index].innerHTML = this.dataset["distanceMiles"];
+                $miss_distance_cells[index].innerHTML = this.dataset["distanceMiles"];
             });
             $("#miss-dis-hdr").html("Miss Distance (miles)");
         }
