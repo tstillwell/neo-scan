@@ -46,7 +46,7 @@ function loadData() { // retrieve data from API and build table
         });
 }
 
-function changeUnits() {  // Change units used in table when 'confirm' button for change units is clicked
+function changeUnits() {  // reload units when 'confirm' change units clicked
         $min_distance_cells = $(".diameter-min");
         $max_distance_cells = $(".diameter-max");
         $miss_distance_cells = $(".miss-distance");
@@ -92,7 +92,7 @@ function km_selected() {  // true if km is selected
         return document.querySelector('#radioKM').checked;
     }
 
-function todayDate() { // return today's date in yyyy-mm-dd format
+function todayDate() { // today's date in yyyy-mm-dd format
     var today = new Date();
     var dd = today.getDate();
     var mm = today.getMonth()+1;
