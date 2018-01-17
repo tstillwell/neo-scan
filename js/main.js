@@ -17,7 +17,8 @@ function loadData() { // retrieve data from API and build table
         var result_table = "<thead><tr><th>NEO Name</th><th id='min-dis-hdr'>Min Est. Diameter (" + size_unit + ")</th>";
         result_table += "<th id='max-dis-hdr'>Max Est. Diameter (" + size_unit + ")</th><th id='miss-dis-hdr'>Miss Distance (";
         result_table += distance_unit + ")</th></tr></thead><tbody>";
-        for (var i = 0; i < number_of_neos; i++) { // Build an html table row for each NEO in response
+        for (var i = 0; i < number_of_neos; i++) { 
+			// Build a table row for each NEO in response
             neo = result.near_earth_objects[date][i];
             result_list_item = "<tr class='neo-item'><td class='neo-name'>";
             result_list_item += "<a href='" + neo.nasa_jpl_url + "'>" + neo.name + "</a></td>";
