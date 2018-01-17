@@ -84,11 +84,11 @@ function changeUnits() {  // Change units used in table when 'confirm' button fo
         }
     }
 
-function meters_selected() {  // return true if meters is selected size unit
+function meters_selected() {  // true if meters is selected
         return document.querySelector('#radioMeters').checked;
     }
 
-function km_selected() {  // return true if km is selected distance unit
+function km_selected() {  // true if km is selected
         return document.querySelector('#radioKM').checked;
     }
 
