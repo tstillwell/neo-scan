@@ -16,7 +16,8 @@ function loadData() { // retrieve data from API and build table
         var distance_unit = km_selected() ? 'kilometers' : 'miles';
         var result_table = "<thead><tr><th>NEO Name</th><th id='min-dis-hdr'>";
 		result_table += "Min Est. Diameter (" + size_unit + ")</th>";
-        result_table += "<th id='max-dis-hdr'>Max Est. Diameter (" + size_unit + ")</th><th id='miss-dis-hdr'>Miss Distance (";
+        result_table += "<th id='max-dis-hdr'>Max Est. Diameter (" + size_unit;
+		result_table += ")</th><th id='miss-dis-hdr'>Miss Distance (";
         result_table += distance_unit + ")</th></tr></thead><tbody>";
         for (var i = 0; i < number_of_neos; i++) { 
 			// Build a table row for each NEO in response
