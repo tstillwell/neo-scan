@@ -1,5 +1,5 @@
 function loadData() { // retrieve data from API and build table
-		var date = $("#date").val();
+        var date = $("#date").val();
         var nasa_api_url = "https://api.nasa.gov/neo/rest/v1/feed?";
         nasa_api_url += $.param({
             'start_date' : date,
@@ -11,8 +11,8 @@ function loadData() { // retrieve data from API and build table
         url: nasa_api_url,
         method: 'GET',
         }).done(function(result){
-			buildTable(result, date);
-		}).fail(function(err) {
+             buildTable(result, date);
+        }).fail(function(err) {
         var error_msg = "<span>Nasa Data could not be loaded</span>";
         $(".apierror").html(error_msg);
         throw err;
