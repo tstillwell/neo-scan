@@ -11,7 +11,7 @@ function loadData() { // retrieve data from API and build table
         url: nasa_api_url,
         method: 'GET',
         }).done(function(result){
-             buildTable(result, date);
+            buildTable(result, date);
         }).fail(function(err) {
         var error_msg = "<span>Nasa Data could not be loaded</span>";
         $(".apierror").html(error_msg);
