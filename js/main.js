@@ -20,19 +20,19 @@ function loadData() { // retrieve data from API and build table
 }
 
 function buildTable(result, date) {
-		if (date === undefined) {
+        if (date === undefined) {
           date = todayDate();
-		}
-	    var number_of_neos = result.element_count;
+        }
+        var number_of_neos = result.element_count;
         var size_unit = meters_selected() ? 'meters' : 'feet';
         var distance_unit = km_selected() ? 'kilometers' : 'miles';
         var result_table = "<thead><tr><th>NEO Name</th><th id='min-dis-hdr'>";
-		result_table += "Min Est. Diameter (" + size_unit + ")</th>";
+        result_table += "Min Est. Diameter (" + size_unit + ")</th>";
         result_table += "<th id='max-dis-hdr'>Max Est. Diameter (" + size_unit;
-		result_table += ")</th><th id='miss-dis-hdr'>Miss Distance (";
+        result_table += ")</th><th id='miss-dis-hdr'>Miss Distance (";
         result_table += distance_unit + ")</th></tr></thead><tbody>";
         for (var i = 0; i < number_of_neos; i++) { 
-			// Build a table row for each NEO in response
+            // Build a table row for each NEO in response
             neo = result.near_earth_objects[date][i];
             table_row = "<tr class='neo-item'><td class='neo-name'>";
             table_row += "<a href='" + neo.nasa_jpl_url + "'>" + neo.name + "</a></td>";
@@ -54,7 +54,7 @@ function buildTable(result, date) {
         result_table += "</tbody>";
         $("#nasa-results").html(result_table);
         $("#nasa-results").tablesorter({ theme: 'blue', widgets: ["zebra"] }).trigger('applyWidgets');
-	}
+    }
 
 function changeUnits() {  // reload units when 'confirm' change units clicked
         $min_distance_cells = $(".diameter-min");
