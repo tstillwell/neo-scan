@@ -11,7 +11,7 @@ function loadData() { // retrieve data from API and build table
         url: nasa_api_url,
         method: 'GET',
         }).done(function(result){
-			buildTable(result);
+			buildTable(result, date);
 		}).fail(function(err) {
         var error_msg = "<span>Nasa Data could not be loaded</span>";
         $(".apierror").html(error_msg);
@@ -19,8 +19,7 @@ function loadData() { // retrieve data from API and build table
         });
 }
 
-function buildTable(result) {
-		var date = $("#date").val();
+function buildTable(result, date) {
 	    var number_of_neos = result.element_count;
         var size_unit = meters_selected() ? 'meters' : 'feet';
         var distance_unit = km_selected() ? 'kilometers' : 'miles';
