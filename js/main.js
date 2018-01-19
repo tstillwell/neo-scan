@@ -20,6 +20,9 @@ function loadData() { // retrieve data from API and build table
 }
 
 function buildTable(result, date) {
+		if (date === undefined) {
+          date = todayDate();
+		}
 	    var number_of_neos = result.element_count;
         var size_unit = meters_selected() ? 'meters' : 'feet';
         var distance_unit = km_selected() ? 'kilometers' : 'miles';
