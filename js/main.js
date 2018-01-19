@@ -50,7 +50,7 @@ function buildTable(result, date) {
             table_row += "'>" + Math.round(neo.close_approach_data[0].miss_distance[distance_unit]) + "</span></td>";
             table_row += "</tr>";
             result_table += table_row; // Add row to table html
-            }
+        }
         result_table += "</tbody>";
         $("#nasa-results").html(result_table);
         $("#nasa-results").tablesorter({ theme: 'blue', widgets: ["zebra"] }).trigger('applyWidgets');
