@@ -1,5 +1,5 @@
 function loadData() { // retrieve data from API and build table
-        var date = $("#date").val();
+		var date = $("#date").val();
         var nasa_api_url = "https://api.nasa.gov/neo/rest/v1/feed?";
         nasa_api_url += $.param({
             'start_date' : date,
@@ -10,8 +10,18 @@ function loadData() { // retrieve data from API and build table
         $.ajax({
         url: nasa_api_url,
         method: 'GET',
-        }).done(function(result) {
-        var number_of_neos = result.element_count;
+        }).done(function(result){
+			buildTable(result);
+		}).fail(function(err) {
+        var error_msg = "<span>Nasa Data could not be loaded</span>";
+        $(".apierror").html(error_msg);
+        throw err;
+        });
+}
+
+function buildTable(result) {
+		var date = $("#date").val();
+	    var number_of_neos = result.element_count;
         var size_unit = meters_selected() ? 'meters' : 'feet';
         var distance_unit = km_selected() ? 'kilometers' : 'miles';
         var result_table = "<thead><tr><th>NEO Name</th><th id='min-dis-hdr'>";
@@ -42,12 +52,7 @@ function loadData() { // retrieve data from API and build table
         result_table += "</tbody>";
         $("#nasa-results").html(result_table);
         $("#nasa-results").tablesorter({ theme: 'blue', widgets: ["zebra"] }).trigger('applyWidgets');
-        }).fail(function(err) {
-        var error_msg = "<span>Nasa Data could not be loaded</span>";
-        $(".apierror").html(error_msg);
-        throw err;
-        });
-}
+	}
 
 function changeUnits() {  // reload units when 'confirm' change units clicked
         $min_distance_cells = $(".diameter-min");
