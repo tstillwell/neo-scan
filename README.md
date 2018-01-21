@@ -42,7 +42,7 @@ If you would like to add a new feature, change functionality, or use this tool i
 
 If you find a bug or would like to see features added or changed, please open an issue on the github project.
 
-## Thanks to 
+## Thanks to
 
 ### NASA NeoWS API
 
