@@ -110,6 +110,10 @@ textarea {
 	border-collapse: collapse;
 	border: 1px solid black;
 	}
+	
+#form-container {
+	margin-top: 1em;
+	}
 
 .apierror  {
 	color: red;
