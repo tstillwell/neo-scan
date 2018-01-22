@@ -62,4 +62,8 @@ https://getbootstrap.com/
 
 ### jQuery
 
+### Tether library
+
+http://tether.io/
+
 ### Wikipedia
