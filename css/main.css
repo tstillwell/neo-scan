@@ -97,6 +97,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
    
+#date {
+	margin-left: 0.5em;
+	}
+   
 #submit-btn {
 	margin: 0 1em;
 	}
