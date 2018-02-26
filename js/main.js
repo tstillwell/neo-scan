@@ -44,7 +44,7 @@ function buildTable(result, date) {
             table_row += neo.estimated_diameter.feet.estimated_diameter_max.toFixed(2);
             table_row += "\" data-dmax-meters=\"" + neo.estimated_diameter.meters.estimated_diameter_max.toFixed(2) + "\">";
             table_row += neo.estimated_diameter[size_unit].estimated_diameter_max.toFixed(2) + " </span></td>";
-            table_row += "<td><span class='miss-distance' data-distance-miles=\"";
+            table_row += "<td><span class=\"miss-distance\" data-distance-miles=\"";
             table_row += Math.round(neo.close_approach_data[0].miss_distance.miles);
             table_row += "\" data-distance-km=\"" + Math.round(neo.close_approach_data[0].miss_distance.kilometers);
             table_row += "\">" + Math.round(neo.close_approach_data[0].miss_distance[distance_unit]) + "</span></td>";
@@ -56,7 +56,7 @@ function buildTable(result, date) {
         $("#nasa-results").tablesorter({ theme: "blue", widgets: ["zebra"] }).trigger("applyWidgets");
     }
 
-function changeUnits() {  // reload units when 'confirm' change units clicked
+function changeUnits() {  // reload units when confirm change units clicked
         $min_distance_cells = $(".diameter-min");
         $max_distance_cells = $(".diameter-max");
         $miss_distance_cells = $(".miss-distance");
@@ -95,11 +95,11 @@ function changeUnits() {  // reload units when 'confirm' change units clicked
     }
 
 function meters_selected() {  // true if meters is selected
-        return document.querySelector('#radioMeters').checked;
+        return document.querySelector("#radioMeters").checked;
     }
 
 function km_selected() {  // true if km is selected
-        return document.querySelector('#radioKM').checked;
+        return document.querySelector("#radioKM").checked;
     }
 
 function todayDate() { // today's date in yyyy-mm-dd format
@@ -109,12 +109,12 @@ function todayDate() { // today's date in yyyy-mm-dd format
     var yyyy = today.getFullYear();
 
     if (dd<10) {
-        dd = '0'+ dd;
+        dd = "0"+ dd;
     }
     if (mm<10) {
-        mm = '0'+ mm;
+        mm = "0"+ mm;
     }
-    today = yyyy + '-' + mm + '-' + dd;
+    today = yyyy + "-" + mm + "-" + dd;
     return today;
     }
 
