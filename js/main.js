@@ -24,36 +24,36 @@ function buildTable(result, date) {
           date = todayDate();
         }
         var number_of_neos = result.element_count;
-        var size_unit = meters_selected() ? 'meters' : 'feet';
-        var distance_unit = km_selected() ? 'kilometers' : 'miles';
-        var result_table = "<thead><tr><th>NEO Name</th><th id='min-dis-hdr'>";
+        var size_unit = meters_selected() ? "meters" : "feet";
+        var distance_unit = km_selected() ? "kilometers" : "miles";
+        var result_table = "<thead><tr><th>NEO Name</th><th id=\"min-dis-hdr\">";
         result_table += "Min Est. Diameter (" + size_unit + ")</th>";
-        result_table += "<th id='max-dis-hdr'>Max Est. Diameter (" + size_unit;
-        result_table += ")</th><th id='miss-dis-hdr'>Miss Distance (";
+        result_table += "<th id=\"max-dis-hdr\">Max Est. Diameter (" + size_unit;
+        result_table += ")</th><th id=\"miss-dis-hdr\">Miss Distance (";
         result_table += distance_unit + ")</th></tr></thead><tbody>";
         for (var i = 0; i < number_of_neos; i++) { 
             // Build a table row for each NEO in response
             neo = result.near_earth_objects[date][i];
-            table_row = "<tr class='neo-item'><td class='neo-name'>";
-            table_row += "<a href='" + neo.nasa_jpl_url + "'>" + neo.name + "</a></td>";
-            table_row += "<td> <span class='diameter-min' data-dmin-feet='";
+            table_row = "<tr class=\"neo-item\"><td class=\"neo-name\">";
+            table_row += "<a href=\"" + neo.nasa_jpl_url + "\">" + neo.name + "</a></td>";
+            table_row += "<td> <span class=\"diameter-min\" data-dmin-feet=\"";
             table_row += neo.estimated_diameter.feet.estimated_diameter_min.toFixed(2);
-            table_row += "' data-dmin-meters='" + neo.estimated_diameter.meters.estimated_diameter_min.toFixed(2) + "'>";
+            table_row += "\" data-dmin-meters=\"" + neo.estimated_diameter.meters.estimated_diameter_min.toFixed(2) + "\">";
             table_row += neo.estimated_diameter[size_unit].estimated_diameter_min.toFixed(2) + "</span></td>";
-            table_row += "<td>" + "<span class='diameter-max' data-dmax-feet='";
+            table_row += "<td>" + "<span class=\"diameter-max\" data-dmax-feet=\"";
             table_row += neo.estimated_diameter.feet.estimated_diameter_max.toFixed(2);
-            table_row += "' data-dmax-meters='" + neo.estimated_diameter.meters.estimated_diameter_max.toFixed(2) + "'>";
+            table_row += "\" data-dmax-meters=\"" + neo.estimated_diameter.meters.estimated_diameter_max.toFixed(2) + "\">";
             table_row += neo.estimated_diameter[size_unit].estimated_diameter_max.toFixed(2) + " </span></td>";
-            table_row += "<td><span class='miss-distance' data-distance-miles='";
+            table_row += "<td><span class='miss-distance' data-distance-miles=\"";
             table_row += Math.round(neo.close_approach_data[0].miss_distance.miles);
-            table_row += "' data-distance-km='" + Math.round(neo.close_approach_data[0].miss_distance.kilometers);
-            table_row += "'>" + Math.round(neo.close_approach_data[0].miss_distance[distance_unit]) + "</span></td>";
+            table_row += "\" data-distance-km=\"" + Math.round(neo.close_approach_data[0].miss_distance.kilometers);
+            table_row += "\">" + Math.round(neo.close_approach_data[0].miss_distance[distance_unit]) + "</span></td>";
             table_row += "</tr>";
             result_table += table_row; // Add row to table html
         }
         result_table += "</tbody>";
         $("#nasa-results").html(result_table);
-        $("#nasa-results").tablesorter({ theme: 'blue', widgets: ["zebra"] }).trigger('applyWidgets');
+        $("#nasa-results").tablesorter({ theme: "blue", widgets: ["zebra"] }).trigger("applyWidgets");
     }
 
 function changeUnits() {  // reload units when 'confirm' change units clicked
