@@ -112,6 +112,7 @@ body {
 .row {
 	margin-right: 0;
 	margin-left: 0;
+	font-weight: 700;
 	}
 
 #nasa-results {
@@ -127,9 +128,6 @@ body {
 	color: red;
 	}
 
-.neo-name a {
-	font-weight: 700;
-}
 .modal-link {
 	display: block;
 	margin-top: 1em;
