@@ -125,6 +125,10 @@ body {
 	margin-top: 1em;
 	}
 
+.modal-header {
+	font-weight: 700;
+	}
+
 .modal-body {
 	font-weight: 400;
 	}
