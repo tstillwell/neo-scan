@@ -125,6 +125,10 @@ body {
 	margin-top: 1em;
 	}
 
+.modal-body {
+	font-weight: 400;
+	}
+
 .apierror  {
 	color: red;
 	}
