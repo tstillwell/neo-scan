@@ -1,7 +1,7 @@
 # NEO Scan
 
-Connects to NASA NEOWS API and displays  approximate distance
-and estimated size info about nearby Near Earth Objects in the browser.
+Displays data for known Near Earth Objects (NEOs)
+making their closest approach on any input date.
 
 ## NASA NEOWS API
 The code which fetches the data from the API
