@@ -99,8 +99,8 @@ function meters_selected() {  // true if meters is selected
 }
 
 function km_selected() {  // true if km is selected
-        return document.querySelector("#radioKM").checked;
-    }
+  return document.querySelector("#radioKM").checked;
+}
 
 function todayDate() { // today's date in yyyy-mm-dd format
     var today = new Date();
