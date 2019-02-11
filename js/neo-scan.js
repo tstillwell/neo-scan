@@ -57,42 +57,42 @@ function buildTable(result, date) {
 }
 
 function changeUnits() {  // reload units when confirm change units clicked
-        $min_distance_cells = $(".diameter-min");
-        $max_distance_cells = $(".diameter-max");
-        $miss_distance_cells = $(".miss-distance");
-        if (meters_selected()){
-            $min_distance_cells.each(function(index){
-                $min_distance_cells[index].innerHTML = this.dataset["dminMeters"];
-            });
-            $max_distance_cells.each(function(index){
-                $max_distance_cells[index].innerHTML = this.dataset["dmaxMeters"];
-            });
-            $("#min-dis-hdr").html("Min Est. Diameter (meters)");
-            $("#max-dis-hdr").html("Max Est. Diameter (meters)");
-        }
-        else {
-            $min_distance_cells.each(function(index){
-                $min_distance_cells[index].innerHTML = this.dataset["dminFeet"];
-            });
-            $max_distance_cells.each(function(index){
-                $max_distance_cells[index].innerHTML = this.dataset["dmaxFeet"];
-            });
-            $("#min-dis-hdr").html("Min Est. Diameter (feet)");
-            $("#max-dis-hdr").html("Max Est. Diameter (feet)");
-        }
-        if (km_selected()){
-            $miss_distance_cells.each(function(index){
-                $miss_distance_cells[index].innerHTML = this.dataset["distanceKm"];
-            });
-            $("#miss-dis-hdr").html("Miss Distance (kilometers)");
-        }
-        else {
-            $miss_distance_cells.each(function(index){
-                $miss_distance_cells[index].innerHTML = this.dataset["distanceMiles"];
-            });
-            $("#miss-dis-hdr").html("Miss Distance (miles)");
-        }
+  $min_distance_cells = $(".diameter-min");
+  $max_distance_cells = $(".diameter-max");
+  $miss_distance_cells = $(".miss-distance");
+  if (meters_selected()){
+    $min_distance_cells.each(function(index){
+      $min_distance_cells[index].innerHTML = this.dataset["dminMeters"];
+    });
+    $max_distance_cells.each(function(index){
+      $max_distance_cells[index].innerHTML = this.dataset["dmaxMeters"];
+    });
+    $("#min-dis-hdr").html("Min Est. Diameter (meters)");
+    $("#max-dis-hdr").html("Max Est. Diameter (meters)");
     }
+  else {
+    $min_distance_cells.each(function(index){
+      $min_distance_cells[index].innerHTML = this.dataset["dminFeet"];
+    });
+    $max_distance_cells.each(function(index){
+      $max_distance_cells[index].innerHTML = this.dataset["dmaxFeet"];
+    });
+    $("#min-dis-hdr").html("Min Est. Diameter (feet)");
+    $("#max-dis-hdr").html("Max Est. Diameter (feet)");
+  }
+  if (km_selected()){
+    $miss_distance_cells.each(function(index){
+    $miss_distance_cells[index].innerHTML = this.dataset["distanceKm"];
+  });
+  $("#miss-dis-hdr").html("Miss Distance (kilometers)");
+  }
+  else {
+    $miss_distance_cells.each(function(index){
+      $miss_distance_cells[index].innerHTML = this.dataset["distanceMiles"];
+    });
+    $("#miss-dis-hdr").html("Miss Distance (miles)");
+  }
+}
 
 function meters_selected() {  // true if meters is selected
         return document.querySelector("#radioMeters").checked;
