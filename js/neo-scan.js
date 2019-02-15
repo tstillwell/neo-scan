@@ -118,11 +118,12 @@ function todayDate() { // today's date in yyyy-mm-dd format
   return today;
 }
 
-
-$( "#date" ).datepicker();  // Add jqueryui datepicker to date control
-$( "#date" ).datepicker( "option", "dateFormat", "yy-mm-dd" );
-document.querySelector("#submit-btn").addEventListener("click", loadData);
-document.querySelector("#units-btn").addEventListener("click", changeUnits);
-$("#date").val(todayDate());  // default date in field to today's date
-$("#radioMeters").prop("checked", true);
-$("#radioKM").prop("checked", true);
+(function init() {
+  $( "#date" ).datepicker();  // Add jqueryui datepicker to date control
+  $( "#date" ).datepicker( "option", "dateFormat", "yy-mm-dd" );
+  document.querySelector("#submit-btn").addEventListener("click", loadData);
+  document.querySelector("#units-btn").addEventListener("click", changeUnits);
+  $("#date").val(todayDate());  // default date in field to today's date
+  $("#radioMeters").prop("checked", true);
+  $("#radioKM").prop("checked", true);
+}());
